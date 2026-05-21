@@ -1,0 +1,167 @@
+/* Responsive Design Breakpoints */
+
+/* Mobile First Approach */
+
+/* Extra Small - 320px */
+@media (max-width: 479px) {
+  .container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+}
+
+/* Small - 480px to 767px (Tablets pequenos) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
+    padding: 1.25rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .grid-sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium - 768px to 1023px (Tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .grid-md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hidden-md {
+    display: none;
+  }
+}
+
+/* Large - 1024px to 1279px (Laptops pequenos) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .grid-lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Extra Large - 1280px+ (Desktops) */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .grid-xl {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hidden-xl {
+    display: none;
+  }
+}
+
+/* 4K - 1920px+ */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .grid-4k {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Portrait e Landscape */
+@media (orientation: portrait) {
+  .landscape-only {
+    display: none;
+  }
+}
+
+@media (orientation: landscape) {
+  .portrait-only {
+    display: none;
+  }
+}
+
+/* Touch devices */
+@media (hover: none) and (pointer: coarse) {
+  button,
+  a,
+  input {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Impressão */
+@media print {
+  .no-print {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+/* Preferências do Usuário */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  body {
+    font-weight: 600;
+  }
+
+  button {
+    border-width: 2px;
+  }
+}
+
+/* Alto contraste */
+@media (prefers-contrast: more) {
+  .color-primary {
+    color: #000;
+  }
+
+  .bg-primary {
+    background-color: #FFF;
+  }
+}
