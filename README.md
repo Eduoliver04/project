@@ -1,6 +1,17 @@
-# Aqui na Rede Pescados - E-commerce de Peixes Frescos
+# Aqui na Rede Pescados — E-commerce de Peixes Frescos
 
-Este é o frontend do e-commerce "Aqui na Rede Pescados", um projeto de venda de peixes frescos em Brasília-DF.
+[![Build](https://github.com/Eduoliver04/project/actions/workflows/build.yml/badge.svg)](https://github.com/Eduoliver04/project/actions/workflows/build.yml)
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-4-646CFF?logo=vite&logoColor=white)
+![Redux Toolkit](https://img.shields.io/badge/Redux_Toolkit-1.9-764ABC?logo=redux&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-06B6D4?logo=tailwindcss&logoColor=white)
+
+Front-end de um e-commerce de pescados em Brasília-DF, desenvolvido no **Projeto Integrador I**
+do curso de Análise e Desenvolvimento de Sistemas do **UniCEUB**. SPA em React + TypeScript com
+catálogo, carrinho, autenticação, checkout, acompanhamento de pedidos e painel administrativo.
+
+Documentação complementar: [guia rápido](QUICKSTART.md) · [documentação técnica](DOCUMENTACAO.md)
 
 ## 🚀 Como Começar
 
@@ -141,15 +152,8 @@ A integração de pagamento utiliza Stripe com suporte para:
 
 ## 🧪 Testes
 
-Para executar os testes:
-```bash
-npm run test
-```
-
-Para executar os testes em modo watch:
-```bash
-npm run test:watch
-```
+O projeto ainda não tem testes unitários. A cada push, o GitHub Actions confere os tipos
+(`npm run type-check`) e gera a build de produção (`npm run build`).
 
 ## 🎯 Funcionalidades
 
@@ -182,14 +186,8 @@ Para fazer deploy, certifique-se de:
 - [x] Roteamento configurado
 - [x] Estilos globais aplicados
 - [ ] Testes unitários
-- [ ] Integração contínua
-
-## 📞 Suporte
-
-Para suporte, entre em contato através de:
-- Email: contato@aquinaredepescados.com.br
-- Telefone: (61) 98765-4321
+- [x] Integração contínua (type-check + build)
 
 ## 📄 Licença
 
-Este projeto é propriedade de Aqui na Rede Pescados.
+Projeto acadêmico desenvolvido para o UniCEUB. Todos os direitos reservados.
